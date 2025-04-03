@@ -124,10 +124,23 @@ p, li {
   border-radius: 20px 20px 60px 20px;
   text-align: center;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.feature-card video{
+  height: 600px; /* Set a fixed height */
+  object-fit: cover; /* Ensures video fills the area without stretching */
+  display: block; /* Ensures no extra spacing issues */
+  border-radius: 8px; /* Optional: for rounded corners */
+  box-shadow: 2px 5px 2px;
+}
+
+
 .feature-card:hover {
-  transform: translateY(-5px) rotate(1deg);
+  transform: translateY(-5px);
 }
 
 .feature-card h3 {
