@@ -1,13 +1,15 @@
-const videos = document.querySelectorAll('.hover-video');
+const featureCards = document.querySelectorAll('.feature-card');
 
-videos.forEach(video => {
-  video.addEventListener('mouseenter', () => {
-    console.log("Video hover started");
-    video.play(); // Start the video when hovered
+featureCards.forEach(card => {
+  const video = card.querySelector('.hover-video'); // Get the video inside the card
+  
+  card.addEventListener('mouseenter', () => {
+    console.log("Feature card hover started");
+    video.play(); // Start the video when the card is hovered
   });
 
-  video.addEventListener('mouseleave', () => {
-    console.log("Video hover ended");
+  card.addEventListener('mouseleave', () => {
+    console.log("Feature card hover ended");
     video.pause(); // Pause the video when the hover ends
     video.currentTime = 0; // Optionally reset the video to the beginning
   });
