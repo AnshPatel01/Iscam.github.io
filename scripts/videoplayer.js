@@ -11,6 +11,5 @@ featureCards.forEach(card => {
   card.addEventListener('mouseleave', () => {
     console.log("Feature card hover ended");
     video.pause(); // Pause the video when the hover ends
-    video.currentTime = 0; // Optionally reset the video to the beginning
   });
 });
