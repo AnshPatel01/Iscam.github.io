@@ -32,10 +32,13 @@ p, li {
 }
 
 /* Circular Menu */
+
+/* Move menu to top-left */
+/* Menu toggle (top-left) */
 .menu-toggle {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 100px;   /* pushed down for room */
+  left: 20px;   /* flush to the left */
   width: 40px;
   height: 40px;
   background: var(--primary-color);
@@ -44,23 +47,18 @@ p, li {
   z-index: 1001;
 }
 
-.menu-icon {
-  width: 24px;
-  height: 24px;
-  margin: 8px;
-  background: url('https://img.icons8.com/?size=24&id=59832&format=png&color=264653') center no-repeat;
-}
-
+/* Circular menu anchor point */
 .circular-menu {
   position: fixed;
-  top: 60px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
+  top: 120px;  /* adjust slightly to align with toggle */
+  left: 40px;
+  width: 0;
+  height: 0;
   z-index: 1000;
 }
 
-.circular-menu.open .nav-item {
+/* Default nav items hidden and stacked */
+.circular-menu .nav-item {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -69,20 +67,85 @@ p, li {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
   transition: all 0.4s ease;
+  transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg);
+  top: 0;
+  left: 0;
 }
 
-.circular-menu .nav-item:nth-child(1) { top: 0; right: 0; }
-.circular-menu.open .nav-item:nth-child(1) { top: 70px; right: 0; }
-.circular-menu.open .nav-item:nth-child(2) { top: 50px; right: 60px; }
-.circular-menu.open .nav-item:nth-child(3) { top: 0; right: 90px; }
-.circular-menu.open .nav-item:nth-child(4) { top: -50px; right: 60px; }
-.circular-menu.open .nav-item:nth-child(5) { top: -70px; right: 0; }
+/* Show and animate on open */
+.circular-menu.open .nav-item {
+  opacity: 1;
+}
+
+/* 5 evenly spaced items in a 180° arc from top to bottom */
+.circular-menu.open .nav-item:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(-90deg) translate(100px) rotate(90deg);
+}
+
+.circular-menu.open .nav-item:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-45deg) translate(100px) rotate(45deg);
+}
+
+.circular-menu.open .nav-item:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg);
+}
+
+.circular-menu.open .nav-item:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(45deg) translate(100px) rotate(-45deg);
+}
+
+.circular-menu.open .nav-item:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(90deg) translate(100px) rotate(-90deg);
+}
+
+
+
+
+
+/* Tooltip label on right of icon */
+.nav-item::after {
+  content: attr(data-label);
+  position: absolute;
+  background: var(--accent-green);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.nav-item:hover::after {
+  opacity: 1;
+}
+
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  margin: 8px;
+  background: url('https://img.icons8.com/?size=24&id=59832&format=png&color=264653') center no-repeat;
+}
+
+
+
 
 .nav-item img {
   width: 24px;
   height: 24px;
 }
+
+.nav-item:hover::after {
+  opacity: 1;
+}
+
 
 /* Overview Section */
 #overview {
