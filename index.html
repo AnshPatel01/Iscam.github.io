@@ -237,23 +237,130 @@
 </section>
 <!-- Postmortem Section -->
 <section id="postmortem" class="section animate-on-load">
-  <h2>Postmortem</h2>
-  <div class="postmortem-grid">
-    <div class="postmortem-circle successes">
-      <h3>Successes</h3>
-      <ul>
-        <li>Great collaboration</li>
-        <li>Effective refactoring</li>
-        <li>Productive meetings</li>
-      </ul>
+  <h2 class="postmortem-heading">Postmortem:</h2>
+
+  <!-- Development Process Experience -->
+  <div>
+    <h2 class="postmortem-sub-heading">Development Process Experience</h2>
+    <div class="postmortem-container">
+      <!-- Block: What Went Right -->
+      <div class="postmortem-block right">
+        <h3 class="list-heading">What Went Right</h3>
+        <ul>
+          <li>
+            The refactoring and debugging after iteration 2 allowed us to have a ready product for iteration 3. 
+          </li>
+          <li>
+            The strategy for avoiding merge conflics worked well after the first iteration. With us preventing any merge conflicts later on.
+          </li>
+          <li>
+            Commit reviews after each developer task finished, and manually checking the changes allowed preventing any new bugs and SOLID violations. 
+          </li>
+          <li>
+            Full separation of concerns between Food/Exercise/User streams and individual work on each of them allowed a smooth development process and a good workflow.
+          </li>
+        </ul>
+      </div>
+      <!-- Block: What Went Wrong -->
+      <div class="postmortem-block wrong">
+        <h3 class="list-heading">What Went Wrong</h3>
+        <ul>
+          <li>
+            At early interations we did not propely undertand the requirements of the project, as well as how to use the tools provided. 
+          </li>
+          <li>
+            For first two iterations we just trusted that the code that others write is good as is, and did not review it. This caused a lot of bugs later on. 
+          </li>
+          <li>
+            There was not quite enough information on how to use the tools provided, and we had to learn a lot of things on our own, usually by trial and error. 
+          </li>
+          <li>
+            We did not ask for the intermediate steps to be shown allowing mutiple feature to not be developed at all.
+          </li>
+          <li>
+            We had interdeveloper dependencies i.e. more than one developer working on the same User/Food/Exercise stream, slowing down the development process. 
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="postmortem-circle improvements">
-      <h3>Improvements</h3>
-      <ul>
-        <li>Reduce technical debt</li>
-        <li>Fix initial feature issues</li>
-        <li>Better time estimates</li>
-      </ul>
+  </div>
+  
+  <!-- Further Reflections -->
+  <div>
+    <div class="postmortem-container outside-block">
+      <!-- Block: Areas for Improvement -->
+      <div class="postmortem-block">
+        <h3 class="list-heading">Improvements from i2</h3>
+        <div class="list-container">
+          <ul>
+            <li>
+              In our i2 what we should improve we mentioned assining specific project streams User/Food/Exercise to each
+              developer, rather than layers. And indeed it was a good idea as each person could eaiser understand their stream 
+              and how to work with it, allowing for smooth development.
+            </li>
+            <li>
+              Another thing we mentioned was having more common meetings and code collaboratively. We did not do that, on the contrary
+              we did not have any meetings at all, and surprisingly it worked out extremely well. We were able to work on our own and
+              not be distracted by other developers.
+            </li>
+            <li>
+              Another thing we mentioned was having more common meetings and code collaboratively. We did not do that, on the contrary
+              we did not have any meetings at all, and surprisingly it worked out extremely well. We were able to work on our own and
+              not be distracted by other developers.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Block: Changes from the Initial Vision -->
+      <div class="postmortem-block">
+        <h3 class="list-heading">Change from iteration 0</h3>
+        <div class="list-container">
+          <ul>
+            <li>
+              The actual returned product is incredbly different from the initial vision. The initial vision was to
+              have a proper calorie planner with ability to plan daily calorie difference and have a proper meal and exercise plan.
+              However, we ended up with a simple calorie counter with no ability to plan anything, due to the incredible complexity of a planner.
+              This project however, can be used as a base for a calorie planner, and we can build on top of it.
+            </li>
+          </ul>
+        </div>
+      </div>
+      What did you learn about team or large project development? What will you start doing, keep doing, or stop doing next time?
+
+      <!-- Block: Team Learnings -->
+      <div class="postmortem-block">
+        <h3 class="list-heading">What we Learned about Teamwork</h3>
+        <div class="list-container">
+          <ul>
+            <li>
+              Not everyone will do their tasks, and you always have to check if they had finished their tasks and how they did it.
+            </li>
+            <li>
+              We will stop trusting that the code that others write is good as is, and will always review it.
+            </li>
+            <li>
+              We will divide the project into the streams and assign each developer to a stream, rather than layers. This will allow for a smoother development process.
+           </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Block: Overall Conclusions -->
+      <div class="postmortem-block">
+        <h3 class="list-heading">General Conclusions</h3>
+        <div class="list-container">
+          <ul>
+            <li>
+               Never trust the code that you did not write yourself. Always review it and make sure it is good.
+            </li>
+            <li>
+              Even what seams like a non escapable dead project can be saved by refactoring and debugging.
+            </li>
+            <li>
+              Never use Android Studio unless absolutely necessary, as it is not worth it. It is slow, buggy and not user friendly.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>

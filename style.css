@@ -252,39 +252,115 @@ p, li {
   border-radius: var(--radius-lg);
 }
 
-/* Postmortem Section */
-.postmortem-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
+/* Postmortem */
+#postmortem {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05); /* Subtle overlay matching your style */
+  border-radius: 10px;
+  color: var(--text-color);
+  margin-top: 40px;
 }
-.postmortem-circle {
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, var(--accent-yellow), var(--primary-color));
-  border-radius: var(--radius-lg);
-  padding: 20px;
+
+.postmortem-heading {
+  font-size: 2rem;
+  color: var(--primary-color); /* Using earthy orange from your palette */
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
-  transition: transform 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.postmortem-circle:hover {
-  transform: rotate(5deg);
+.postmortem-sub-heading {
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 27px;
+  color: var(--primary-color);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
 }
 
-.postmortem-circle h3 {
-  font-family: "Lora", serif;
+/* Grid container for the postmortem “cards” */
+.postmortem-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2-column grid on larger screens */
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
-.postmortem-circle ul {
-  list-style: none;
-  padding: 0;
+/* Use these classes to differentiate block borders */
+.right {
+  border: 2px solid green;
 }
 
-.postmortem-circle li {
-  margin: 10px 0;
+.wrong {
+  border: 2px solid salmon;
 }
+
+/* Individual postmortem block styling */
+.postmortem-block {
+  
+  /* beige background */
+  background: var(--primary-color);
+  border-radius: var(--radius-sm);
+  padding: 20px 40px 20px 20px;
+  /* beige box shdow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.postmortem-block:hover {
+  transform: scale(0.96);
+}
+
+.postmortem-block p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text-color); /* Dark teal for contrast */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling for list items within each block */
+.postmortem-block ul li {
+  padding: 0 20px 20px 20px; /* Indent list items */
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* List heading styling */
+.list-heading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color : #264653;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Styling adjustments for blocks that span the full width */
+.outside-block {
+  grid-template-columns: 1fr;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.outside-block .postmortem-block li {
+  padding: 0 40px 0 20px;
+  font-size: 22px;
+}
+
+.outside-block .postmortem-block {
+  padding: 30px;
+  border: 2px solid #ccc;
+}
+
+/* Responsive Design: Stack postmortem blocks on small screens */
+@media (max-width: 768px) {
+  .postmortem-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* Animations */
 .animate-on-load {
