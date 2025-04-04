@@ -211,6 +211,18 @@ p, li {
   border-radius: var(--radius-lg);
   margin-bottom: 10px;
 }
+/* Users Text Block Styling */
+.user-text-block {
+  background: #fff;                /* A clean white background for contrast */
+  padding: 20px;                   /* Adequate padding for readability */
+  border-radius: 10px;             /* Rounded corners for a modern feel */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px;                /* Limit the width for better focus */
+  margin: 20px auto;               /* Center the block with vertical spacing */
+  font-size: 1.1rem;               /* Slightly larger text for easy reading */
+  color: var(--text-color);        /* Use your defined text color for consistency */
+}
+
 
 /* Team Section */
 .team-grid {
