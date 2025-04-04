@@ -206,11 +206,9 @@ li {
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 177.77%;
-  /* 9:16 aspect ratio */
+  padding-top: 177.78%; /* 9:16 aspect ratio */
   overflow: hidden;
   border-radius: 8px;
-  /* box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1); */
   margin-top: 15px;
 }
 
@@ -220,17 +218,8 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-.feature-card video {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  object-fit: contain; /* Keeps video scaled inside container */
   border-radius: 8px;
-  /* box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1); */
-  margin-top: 15px;
-  max-height: 400px;
 }
 
 .video-overlay {
