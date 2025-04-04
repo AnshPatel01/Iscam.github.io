@@ -130,12 +130,53 @@ p, li {
   justify-content: center;
 }
 
-.feature-card video{
-  height: 600px; /* Set a fixed height */
-  object-fit: cover; /* Ensures video fills the area without stretching */
-  display: block; /* Ensures no extra spacing issues */
-  border-radius: 8px; /* Optional: for rounded corners */
-  box-shadow: 2px 5px 2px;
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 177.77%; /* 9:16 aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+  /* box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1); */
+  margin-top: 15px;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-card video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  /* box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1); */
+  margin-top: 15px;
+  max-height: 400px;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(38, 70, 83, 0.85);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-family: 'Rubik', sans-serif;
+  pointer-events: none; /* Allow click to go through */
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.video-wrapper:hover .video-overlay {
+  opacity: 0.6;
 }
 
 
@@ -297,5 +338,16 @@ p, li {
 
   #vision .para p {
     font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .feature-grid {
+    grid-template-columns: 1fr; /* stack cards vertically */
+  }
+
+  .feature-card video {
+    max-height: 180px;
   }
 }

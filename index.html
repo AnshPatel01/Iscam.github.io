@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FitTrack - Your Health, Simplified</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Circular Navigation Menu -->
-    <div class="menu-toggle">
-      <div class="menu-icon"></div>
-    </div>
-    <nav class="circular-menu">
-      <div class="nav-item" data-target="overview">
-        <img src="https://img.icons8.com/?size=24&id=99813&format=png&color=2A9D8F" alt="Overview Icon" />
-      </div>
-      <div class="nav-item" data-target="functionality">
-        <img src="https://img.icons8.com/?size=24&id=S1hns4Mfld3u&format=png&color=2A9D8F" alt="Features Icon" />
-      </div>
-      <div class="nav-item" data-target="users">
-        <img src="https://img.icons8.com/?size=24&id=aOANxyF4L9EF&format=png&color=2A9D8F" alt="Users Icon" />
-      </div>
-      <div class="nav-item" data-target="contributors">
-        <img src="https://img.icons8.com/?size=24&id=92261&format=png&color=2A9D8F" alt="Team Icon" />
-      </div>
-      <div class="nav-item" data-target="postmortem">
-        <img src="https://img.icons8.com/?size=24&id=87268&format=png&color=2A9D8F" alt="Postmortem Icon" />
-      </div>
-    </nav>
 
-    <main>
-      <!-- Overview Section -->
-      <section id="overview" class="section animate-on-load">
-        <div class="overview-content">
-          <h1>FitTrack</h1>
-          <p>
-            FitTrack empowers you to achieve your fitness and nutrition goals with a simple, adaptable tool designed for busy, health-conscious lives.
-          </p>
-        </div>
-        <div class="curved-bg"></div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTrack - Your Health, Simplified</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Lora:wght@400;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Circular Navigation Menu -->
+  <div class="menu-toggle">
+    <div class="menu-icon"></div>
+  </div>
+  <nav class="circular-menu">
+    <div class="nav-item" data-target="overview">
+      <img src="https://img.icons8.com/?size=24&id=99813&format=png&color=2A9D8F" alt="Overview Icon" />
+    </div>
+    <div class="nav-item" data-target="functionality">
+      <img src="https://img.icons8.com/?size=24&id=S1hns4Mfld3u&format=png&color=2A9D8F" alt="Features Icon" />
+    </div>
+    <div class="nav-item" data-target="users">
+      <img src="https://img.icons8.com/?size=24&id=aOANxyF4L9EF&format=png&color=2A9D8F" alt="Users Icon" />
+    </div>
+    <div class="nav-item" data-target="contributors">
+      <img src="https://img.icons8.com/?size=24&id=92261&format=png&color=2A9D8F" alt="Team Icon" />
+    </div>
+    <div class="nav-item" data-target="postmortem">
+      <img src="https://img.icons8.com/?size=24&id=87268&format=png&color=2A9D8F" alt="Postmortem Icon" />
+    </div>
+  </nav>
+
+  <main>
+    <!-- Overview Section -->
+    <section id="overview" class="section animate-on-load">
+      <div class="overview-content">
+        <h1>FitTrack</h1>
+        <p>
+          FitTrack empowers you to achieve your fitness and nutrition goals with a simple, adaptable tool designed for
+          busy, health-conscious lives.
+        </p>
+      </div>
+      <div class="curved-bg"></div>
+    </section>
     </section>
 
     <!-- Vision Section -->
@@ -81,7 +85,7 @@
           recommended daily calorie intake. These suggestions include preset
           meals with detailed macronutrient information, offering users a quick
           and easy way to plan their nutrition. Additionally, users can add their
-own recipes to the system, enabling them to track and manage their
+          own recipes to the system, enabling them to track and manage their
           unique dietary preferences. This combination of customization and
           guidance ensures that FitTrack supports a wide range of lifestyles.
         </p>
@@ -108,63 +112,83 @@ own recipes to the system, enabling them to track and manage their
       </div>
     </section>
 
-      <!-- Features Section -->
-      <section id="functionality" class="section animate-on-load">
-        <h2>Features</h2>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <h3>Login and Functionality</h3>
-            <p>
-              Log in with your username and password, or easily create an account by entering your details and choosing a secure password.
-            </p>
-            <video class="hover-video" loop muted>
-              <source src="./assets/register_login.mp4" type="video/mp4">
+    <!-- Features Section -->
+    <section id="functionality" class="section animate-on-load">
+      <h2>Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Login and Functionality</h3>
+          <p>
+            Log in with your username and password, or easily create an account by entering your details and choosing a
+            secure password.
+          </p>
+          <div class="video-wrapper">
+            <video class="click-video" loop muted preload="none">
+              <source src="./assets/register_login.mp4" type="video/mp4" />
             </video>
-          </div>
-          <div class="feature-card">
-            <h3>Adding Food Items to Your Plan</h3>
-            <p>
-              Easily add and edit food items in your meal plan. Customize and update your food entries to accurately track your nutrition throughout the day.
-            </p>
-            <video class="hover-video" loop muted>
-              <source src="./assets/new_food.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="feature-card">
-            <h3>Adding Exercises to Your Plan</h3>
-            <p>
-              Incorporate a variety of exercises into your plan. Add and modify workout routines to tailor your exercise regimen to your personal fitness goals.
-            </p>
-            <video class="hover-video" loop muted>
-              <source src="./assets/add_exercise.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="feature-card">
-            <h3>Tracking Calories</h3>
-            <p>
-              Monitor your calorie intake with precision using real-time tracking and analytics, ensuring you stay on target with your nutrition and fitness objectives.
-            </p>
-            <video class="hover-video" loop muted>
-              <source src="./assets/add_meal.mp4" type="video/mp4">
-            </video>
+            <div class="video-overlay">Click to Play</div>
           </div>
         </div>
-      </section>
 
- <!-- Users Section -->
- <section id="users" class="section animate-on-load">
-  <h2>Intended Users</h2>
-  <div class="testimonial-slider">
-    <div class="testimonial">
-      <img src="assets/images/user.png" alt="User" />
-      <p>"FitTrack keeps me motivated!" - Alex, 22</p>
-    </div>
-    <div class="testimonial">
-      <img src="assets/images/user.png" alt="User" />
-      <p>"Simple and effective!" - Jamie, 19</p>
-    </div>
-  </div>
-</section>
+        <div class="feature-card">
+          <h3>Adding Food Items to Your Plan</h3>
+          <p>
+            Easily add and edit food items in your meal plan. Customize and update your food entries to accurately track
+            your nutrition throughout the day.
+          </p>
+          <div class="video-wrapper">
+            <video class="click-video" loop muted preload="none">
+              <source src="./assets/new_food.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">Click to Play</div>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <h3>Adding Exercises to Your Plan</h3>
+          <p>
+            Incorporate a variety of exercises into your plan. Add and modify workout routines to tailor your exercise
+            regimen to your personal fitness goals.
+          </p>
+          <div class="video-wrapper">
+            <video class="click-video" loop muted preload="none">
+              <source src="./assets/add_exercise.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">Click to Play</div>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <h3>Tracking Calories</h3>
+          <p>
+            Monitor your calorie intake with precision using real-time tracking and analytics, ensuring you stay on
+            target with your nutrition and fitness objectives.
+          </p>
+          <div class="video-wrapper">
+            <video class="click-video" loop muted preload="none">
+              <source src="./assets/add_meal.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">Click to Play</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Users Section -->
+    <section id="users" class="section animate-on-load">
+      <h2>Intended Users</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <img src="assets/images/user.png" alt="User" />
+          <p>"FitTrack keeps me motivated!" - Alex, 22</p>
+        </div>
+        <div class="testimonial">
+          <img src="assets/images/user.png" alt="User" />
+          <p>"Simple and effective!" - Jamie, 19</p>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -175,93 +199,109 @@ own recipes to the system, enabling them to track and manage their
 
 
 
+    <!-- Team Section -->
+    <section id="contributors" class="section animate-on-load">
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="contributor-card">
+          <img src="assets/images/user.png" alt="Max Lan" />
+          <h3>Max Lan</h3>
+          <p>HSQLDB troubleshooting</p>
+        </div>
+        <div class="contributor-card">
+          <img src="assets/images/user.png" alt="Ansh Patel" />
+          <h3>Ansh Patel</h3>
+          <p>UI design</p>
+        </div>
+        <div class="contributor-card">
+          <img src="assets/images/user.png" alt="Shiv Gahndi" />
+          <h3>Shiv Gahndi</h3>
+          <p>Refactoring</p>
+        </div>
+        <div class="contributor-card">
+          <img src="assets/images/user.png" alt="Carsten Kolynchuk" />
+          <h3>Carsten Kolynchuk</h3>
+          <p>Documentation</p>
+        </div>
+        <div class="contributor-card">
+          <img src="assets/images/user.png" alt="Ian Spellman" />
+          <h3>Ian Spellman</h3>
+          <p>Testing</p>
+        </div>
+      </div>
+    </section>
+    <!-- Postmortem Section -->
+    <section id="postmortem" class="section animate-on-load">
+      <h2>Postmortem</h2>
+      <div class="postmortem-grid">
+        <div class="postmortem-circle successes">
+          <h3>Successes</h3>
+          <ul>
+            <li>Great collaboration</li>
+            <li>Effective refactoring</li>
+            <li>Productive meetings</li>
+          </ul>
+        </div>
+        <div class="postmortem-circle improvements">
+          <h3>Improvements</h3>
+          <ul>
+            <li>Reduce technical debt</li>
+            <li>Fix initial feature issues</li>
+            <li>Better time estimates</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".circular-menu");
+      const navItems = document.querySelectorAll(".nav-item");
 
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("open");
+      });
 
-
-
-
-
-
-
-
-
-
-<!-- Team Section -->
-<section id="contributors" class="section animate-on-load">
-  <h2>Our Team</h2>
-  <div class="team-grid">
-    <div class="contributor-card">
-      <img src="assets/images/user.png" alt="Max Lan" />
-      <h3>Max Lan</h3>
-      <p>HSQLDB troubleshooting</p>
-    </div>
-    <div class="contributor-card">
-      <img src="assets/images/user.png" alt="Ansh Patel" />
-      <h3>Ansh Patel</h3>
-      <p>UI design</p>
-    </div>
-    <div class="contributor-card">
-      <img src="assets/images/user.png" alt="Shiv Gahndi" />
-      <h3>Shiv Gahndi</h3>
-      <p>Refactoring</p>
-    </div>
-    <div class="contributor-card">
-      <img src="assets/images/user.png" alt="Carsten Kolynchuk" />
-      <h3>Carsten Kolynchuk</h3>
-      <p>Documentation</p>
-    </div>
-    <div class="contributor-card">
-      <img src="assets/images/user.png" alt="Ian Spellman" />
-      <h3>Ian Spellman</h3>
-      <p>Testing</p>
-    </div>
-  </div>
-</section>
-<!-- Postmortem Section -->
-<section id="postmortem" class="section animate-on-load">
-  <h2>Postmortem</h2>
-  <div class="postmortem-grid">
-    <div class="postmortem-circle successes">
-      <h3>Successes</h3>
-      <ul>
-        <li>Great collaboration</li>
-        <li>Effective refactoring</li>
-        <li>Productive meetings</li>
-      </ul>
-    </div>
-    <div class="postmortem-circle improvements">
-      <h3>Improvements</h3>
-      <ul>
-        <li>Reduce technical debt</li>
-        <li>Fix initial feature issues</li>
-        <li>Better time estimates</li>
-      </ul>
-    </div>
-  </div>
-</section>
-</main>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const toggle = document.querySelector(".menu-toggle");
-        const menu = document.querySelector(".circular-menu");
-        const navItems = document.querySelectorAll(".nav-item");
-
-        toggle.addEventListener("click", () => {
-          menu.classList.toggle("open");
-        });
-
-        navItems.forEach((item) => {
-          item.addEventListener("click", () => {
-            const targetId = item.getAttribute("data-target");
-            document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
-            menu.classList.remove("open");
-          });
+      navItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const targetId = item.getAttribute("data-target");
+          document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+          menu.classList.remove("open");
         });
       });
-    </script>
+    });
 
-    <script src="./scripts/videoplayer.js"></script>
-  </body>
+    // Click-to-play toggle for all videos
+    document.querySelectorAll('.click-video').forEach((video) => {
+  const wrapper = video.closest('.video-wrapper');
+  const overlay = wrapper.querySelector('.video-overlay');
+  let hasBeenPlayed = false;
+
+  video.addEventListener('click', () => {
+    // Pause all other videos
+    document.querySelectorAll('.click-video').forEach((v) => {
+      if (v !== video) {
+        v.pause();
+        v.currentTime = 0;
+      }
+    });
+
+    // Play or pause this one
+    if (video.paused) {
+      video.play();
+      if (!hasBeenPlayed && overlay) {
+        overlay.style.opacity = '0';
+        hasBeenPlayed = true;
+      }
+    } else {
+      video.pause();
+    }
+  });
+});
+  </script>
+
+  <script src="./scripts/videoplayer.js"></script>
+</body>
 </html>
