@@ -1,10 +1,14 @@
 /* Global Styles */
 :root {
   --background-color: #FDFCFA;
-  --primary-color: #F4A261; /* Earthy orange */
-  --accent-green: #3b2a9d; /* Forest green */
-  --accent-yellow: #E9C46A; /* Sunny yellow */
-  --text-color: #264653; /* Dark teal for contrast */
+  --primary-color: #F4A261;
+  /* Earthy orange */
+  --accent-green: #3b2a9d;
+  /* Forest green */
+  --accent-yellow: #E9C46A;
+  /* Sunny yellow */
+  --text-color: #264653;
+  /* Dark teal for contrast */
   --radius-sm: 10px;
   --radius-lg: 50%;
 }
@@ -17,11 +21,14 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
 }
 
-p, li {
+p,
+li {
   font-weight: 400;
   line-height: 1.6;
 }
@@ -37,8 +44,10 @@ p, li {
 /* Menu toggle (top-left) */
 .menu-toggle {
   position: fixed;
-  top: 100px;   /* pushed down for room */
-  left: 20px;   /* flush to the left */
+  top: 100px;
+  /* pushed down for room */
+  left: 20px;
+  /* flush to the left */
   width: 40px;
   height: 40px;
   background: var(--primary-color);
@@ -50,7 +59,8 @@ p, li {
 /* Circular menu anchor point */
 .circular-menu {
   position: fixed;
-  top: 120px;  /* adjust slightly to align with toggle */
+  top: 120px;
+  /* adjust slightly to align with toggle */
   left: 40px;
   width: 0;
   height: 0;
@@ -196,7 +206,8 @@ p, li {
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 177.77%; /* 9:16 aspect ratio */
+  padding-top: 177.77%;
+  /* 9:16 aspect ratio */
   overflow: hidden;
   border-radius: 8px;
   /* box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1); */
@@ -233,7 +244,8 @@ p, li {
   border-radius: 6px;
   font-size: 0.85rem;
   font-family: 'Rubik', sans-serif;
-  pointer-events: none; /* Allow click to go through */
+  pointer-events: none;
+  /* Allow click to go through */
   transition: opacity 0.3s ease;
   opacity: 1;
 }
@@ -274,16 +286,25 @@ p, li {
   border-radius: var(--radius-lg);
   margin-bottom: 10px;
 }
+
 /* Users Text Block Styling */
 .user-text-block {
-  background: #fff;                /* A clean white background for contrast */
-  padding: 20px;                   /* Adequate padding for readability */
-  border-radius: 10px;             /* Rounded corners for a modern feel */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  max-width: 800px;                /* Limit the width for better focus */
-  margin: 20px auto;               /* Center the block with vertical spacing */
-  font-size: 1.1rem;               /* Slightly larger text for easy reading */
-  color: var(--text-color);        /* Use your defined text color for consistency */
+  background: #fff;
+  /* A clean white background for contrast */
+  padding: 20px;
+  /* Adequate padding for readability */
+  border-radius: 10px;
+  /* Rounded corners for a modern feel */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  max-width: 800px;
+  /* Limit the width for better focus */
+  margin: 20px auto;
+  /* Center the block with vertical spacing */
+  font-size: 1.1rem;
+  /* Slightly larger text for easy reading */
+  color: var(--text-color);
+  /* Use your defined text color for consistency */
 }
 
 
@@ -318,7 +339,8 @@ p, li {
 /* Postmortem */
 #postmortem {
   padding: 40px;
-  background: rgba(255, 255, 255, 0.05); /* Subtle overlay matching your style */
+  background: rgba(255, 255, 255, 0.05);
+  /* Subtle overlay matching your style */
   border-radius: 10px;
   color: var(--text-color);
   margin-top: 40px;
@@ -326,7 +348,8 @@ p, li {
 
 .postmortem-heading {
   font-size: 2rem;
-  color: var(--primary-color); /* Using earthy orange from your palette */
+  color: var(--primary-color);
+  /* Using earthy orange from your palette */
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   margin-bottom: 20px;
@@ -344,7 +367,8 @@ p, li {
 /* Grid container for the postmortem “cards” */
 .postmortem-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2-column grid on larger screens */
+  grid-template-columns: 1fr 1fr;
+  /* 2-column grid on larger screens */
   gap: 20px;
   margin-bottom: 40px;
 }
@@ -360,7 +384,7 @@ p, li {
 
 /* Individual postmortem block styling */
 .postmortem-block {
-  
+
   /* beige background */
   background: var(--primary-color);
   border-radius: var(--radius-sm);
@@ -377,13 +401,15 @@ p, li {
 .postmortem-block p {
   margin: 0;
   line-height: 1.6;
-  color: var(--text-color); /* Dark teal for contrast */
+  color: var(--text-color);
+  /* Dark teal for contrast */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Styling for list items within each block */
 .postmortem-block ul li {
-  padding: 0 20px 20px 20px; /* Indent list items */
+  padding: 0 20px 20px 20px;
+  /* Indent list items */
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   color: var(--text-color);
@@ -395,7 +421,7 @@ p, li {
 .list-heading {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color : #264653;
+  color: #264653;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -432,9 +458,20 @@ p, li {
 }
 
 @keyframes fadeInBounce {
-  0% { opacity: 0; transform: translateY(30px); }
-  60% { opacity: 1; transform: translateY(-10px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive Design */
@@ -444,6 +481,7 @@ p, li {
     align-items: center;
   }
 }
+
 /* Add to :root */
 :root {
   --vision-bg: rgba(244, 162, 97, 0.1);
@@ -495,7 +533,8 @@ p, li {
 
 @media (max-width: 480px) {
   .feature-grid {
-    grid-template-columns: 1fr; /* stack cards vertically */
+    grid-template-columns: 1fr;
+    /* stack cards vertically */
   }
 
   .feature-card video {
